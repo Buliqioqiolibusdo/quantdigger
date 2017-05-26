@@ -14,7 +14,7 @@ price_data = pd.read_csv("./work/IF000.SHFE-10.Minute.csv",
                          index_col=0, parse_dates=True)
 # 创建平均线
 ma10 = MA(price_data.close, 10, 'MA10', 'y', 2)
-ma20 = MA(price_data.close, 60, 'MA10', 'b', 2)
+ma20 = MA(price_data.close, 20, 'MA10', 'b', 2)
 print ma10
 # 绘制指标
 ma10.plot(ax)
