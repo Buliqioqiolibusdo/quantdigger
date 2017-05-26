@@ -2,12 +2,10 @@
 *.swp
 *.DS_Store
 
-
+demo/log
 .idea/
 dist/
 *.egg-info/
 build/
-demo/work/*
-tests/work/
 
 _local_*
