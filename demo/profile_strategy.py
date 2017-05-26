@@ -54,8 +54,8 @@ if __name__ == '__main__':
     start = timeit.default_timer()
     #set_symbols(['BB.SHFE-1.Minute']) 
     #set_symbols(['BB.SHFE']) 
-    set_config({ 'source': 'csv' })
-    set_symbols(['BB.SHFE-1.Day'])
+    set_config({ 'source': 'tushare' })
+    set_symbols(['300333.SZ-1.Day'],'2014-6-1','2016-12-10')
     profile = add_strategy([DemoStrategy('A2')], { 'capital': 5000000.0})
 
     run()
